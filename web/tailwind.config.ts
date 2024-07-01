@@ -14,100 +14,50 @@ const config: Config = {
         roboto: ['var(--font-roboto)'],
         manrope: ['var(--font-manrope)']
       },
+      transitionDuration: {
+        'hoverDelay': '300ms',
+      },
+      transitionProperty: {
+        'colors': 'background-color, border-color, color',
+      },
+      transitionTimingFunction: {
+        'ease': 'ease',
+      },
+      colors: {
+        'white': '#FFFFFF',
+        'black': '#000000',
+        'secondary': '#111114',
+        'backgroundDef': '#09090B',
+        'primitive-400': '#F27777',
+        'primitive-500': '#E53939',
+        'neutral-100': '#F5F5F5',
+        'neutral-200': '#E5E5E5',
+        'neutral-300': '#D4D4D4',
+        'neutral-400': '#A3A3A3',
+        'neutral-500': '#737373',
+        'neutral-600': '#525252',
+        'neutral-700': '#404040',
+        'neutral-800': '#262626',
+        'neutral-900': '#171717',
+        'gray-200': '#E5E7EB',
+        'gray-300': '#D1D5DB',
+        'zinc-300': '#D4D4D8',
+        'zinc-400': '#A1A1AA',
+        'zinc-700': '#3F3F46',
+        'zinc-800': '#27272A',
+        'zinc-900': '#191D1F',
+      },
+      opacity: {
+        '06': '0.06',
+      }
     },
   },
   plugins: [
-    plugin(function ({ addUtilities, theme }) {
-      const hoverDelay = theme('transitionDuration.300', '300ms');
+    plugin(function ({ addUtilities }) {
+
 
       addUtilities({
-        '.bg': {
-          backgroundColor: '#191D1F',
-        },
-        '.btn-submit': {
-          width: '105px',
-          height: '40px',
-          borderWidth: '1px',
-          borderRadius: '8px',
-          backgroundColor: '#FFFFFF',
-          borderColor: '#FFFFFF',
-          color: '#000000',
-          fontSize: '14px',
-          fontWeight: '700',
-          transition: `background-color ${hoverDelay} ease, border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            backgroundColor: '#F27777',
-            borderColor: '#F27777',
-            color: '#FFFFFF',
-          },
-        },
-        '.btn-close': {
-          width: '105px',
-          height: '40px',
-          borderWidth: '1px',
-          borderRadius: '8px',
-          backgroundColor: 'transparent',
-          borderColor: '#A3A3A3',
-          color: '#A3A3A3',
-          fontSize: '14px',
-          fontWeight: '700',
-          transition: `border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            borderColor: '#D4D4D4',
-            color: '#D4D4D4',
-          },
-        },
-        '.btn-cancel': {
-          width: '160px',
-          height: '40px',
-          borderWidth: '1px',
-          borderRadius: '8px',
-          backgroundColor: 'transparent',
-          borderColor: '#F27777',
-          color: '#F27777',
-          fontSize: '14px',
-          fontWeight: '700',
-          transition: `border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            backgroundColor: 'transparent',
-            borderColor: '#E53939',
-            color: '#E53939',
-          },
-        },
-        '.btn-tryAgain': {
-          width: '181px',
-          height: '40px',
-          borderWidth: '1px',
-          borderRadius: '8px',
-          backgroundColor: '#FFFFFF',
-          borderColor: '#FFFFFF',
-          color: '#000000',
-          fontSize: '14px',
-          fontWeight: '700',
-          transition: `background-color ${hoverDelay} ease, border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            backgroundColor: '#F27777',
-            borderColor: '#F27777',
-            color: '#D4D4D4',
-          },
-        },
-        '.btn-topBar': {
-          width: '132px',
-          height: '48px',
-          borderWidth: '1px',
-          borderRadius: '50px',
-          backgroundColor: 'transparent',
-          borderColor: '#E53939',
-          color: '#FFFFFF',
-          fontSize: '18px',
-          fontWeight: '600',
-          transition: `background-color ${hoverDelay} ease, border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            backgroundColor: '#E53939',
-            borderColor: '#E53939',
-            color: '#D4D4D4',
-          },
-        },
+
       });
     }),
   ],
