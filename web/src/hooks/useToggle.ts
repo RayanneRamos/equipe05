@@ -1,15 +1,11 @@
 import { useState } from 'react';
 
 export function useToggle(initialValue = false) {
-    const [isSidebarOpen, setSidebarOpen] = useState(false);
+    const [isSidebarOpen, setSidebarOpen] = useState(initialValue);
 
     const handleBurguerClick = () => {
-        setSidebarOpen(true);
+        setSidebarOpen(!isSidebarOpen);
     };
 
-    const handleSidebarClose = () => {
-        setSidebarOpen(false);
-    };
-
-    return { isSidebarOpen, handleBurguerClick, handleSidebarClose };
+    return { isSidebarOpen, handleBurguerClick };
 }

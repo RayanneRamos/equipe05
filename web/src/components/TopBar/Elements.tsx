@@ -48,16 +48,16 @@ function Comunidade() {
     )
 }
 function ButtonTopBar() {
-    const { isSidebarOpen, handleBurguerClick, handleSidebarClose } = useToggle(false);
+    const { isSidebarOpen, handleBurguerClick } = useToggle(false);
     return (
         <>
-            <Link href='#Contato'>
+            <Link href='#Contato' passHref>
                 <Button size='default'>
                     Contato
                 </Button>
             </Link>
             <Button onClick={handleBurguerClick} burguer />
-            {isSidebarOpen && <SideBar onClose={handleSidebarClose} />}
+            {isSidebarOpen && <SideBar onClose={handleBurguerClick} />}
         </>
     );
 }
