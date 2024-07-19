@@ -1,9 +1,12 @@
+import QuemSomos from "@/components/QuemSomos/QuemSomos";
+import NossaComunidade from "@/components/NossaComunidade/NossaComunidade";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <h1>Hello World</h1>
+      <QuemSomos/>
+      <NossaComunidade/>
     </>
   );
 }
