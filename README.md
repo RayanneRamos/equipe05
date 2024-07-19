@@ -29,8 +29,6 @@ Este projeto visa desenvolver uma landing page principal e duas páginas secund�
 - **Banco de Dados:** MySQL
 - **Controle de Versão:** Git
 - **Ferramentas de Design UX/UI:** Figma
-<!-- - **QA (Controle de Qualidade):**
--->
 
 # Agradecimentos
 
