@@ -4,25 +4,34 @@ type Props = {
   children: ReactNode
 }
 
+function ContainerNossaComunidade({ children }: Props) {
+  return(
+    <section className=" flex xl:flex-row xl:py-[112px] xl:px-[128px]">
+      {children}
+    </section>
+  )
+}
+
 function ContainerText({ children }: Props) {
   return(
-     <section className=" xl:py-0 xl:px-16 mr-16">
+     <div  className=" xl:py-0 xl:px-16 mr-16">
        {children}
-     </section>
+     </div>
   
   )
 }
 
 function ContainerImage({ children }: Props) {
   return(
-    <section>
+    <div>
       {children}
-    </section>
+    </div>
   )
 }
 
 export {
 ContainerText,
 ContainerImage,
+ContainerNossaComunidade,
 
 }

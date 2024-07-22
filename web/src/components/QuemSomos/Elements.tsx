@@ -4,7 +4,7 @@ import dot from "@/assets/dot.svg"
 
 function titulo() {
   return (
-    <h1 className="text-[#FFFF] md:w-[527px] xl:text-[48px] xl:leading-[57.6px] mb-6">Quem somos e em que acreditamos?</h1>
+    <h2 className="text-[#FFFF] md:w-[527px] xl:text-[48px] xl:leading-[57.6px] mb-6">Quem somos e em que acreditamos?</h2>
   )
 }
 
