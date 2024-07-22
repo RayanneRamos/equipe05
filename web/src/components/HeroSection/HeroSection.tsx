@@ -3,7 +3,7 @@ import * as E from "./Elements"
 
 export default function HeroSection() {
   return(
-    <section className="heroSection xl:flex-row xl:py-[24px] xl:px-[72px]">
+    <C.ContainerHeroSection>
        <C.ContainerText>
           <E.titulo/>
           <E.descricao/>
@@ -16,6 +16,6 @@ export default function HeroSection() {
        <C.ContainerImage>
           <E.mapaMundi/>
        </C.ContainerImage>
-    </section>
+    </C.ContainerHeroSection>
   )
 }

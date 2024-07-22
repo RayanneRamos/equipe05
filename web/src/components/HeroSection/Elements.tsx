@@ -4,7 +4,7 @@ import mapImage from "@/assets/map.svg"
 
 function titulo() {
   return (
-    <h1 className="title-heroSection bg-clip-text text-transparent bg-gradient-to-r from-[#A6A6A6] via-[#FFF] to-[#A3A3A3] md:w-[646px] xl:text-[64px] xl:leading-[72px]">Impulsione Seu Futuro na Área Tech com a Código Certo!</h1>
+    <h2 className="title-heroSection bg-clip-text text-transparent bg-gradient-to-r from-[#A6A6A6] via-[#FFF] to-[#A3A3A3] md:w-[646px] xl:text-[64px] xl:leading-[72px]">Impulsione Seu Futuro na Área Tech com a Código Certo!</h2>
   )
 }
 
