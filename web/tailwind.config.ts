@@ -214,6 +214,9 @@ const config: Config = {
             // height: '326px',
             flex: '1 0 0',
         },
+        '.beneficios': {
+          fontFamily: 'var(--font-roboto)'
+        },
       });
     }),
   ],
