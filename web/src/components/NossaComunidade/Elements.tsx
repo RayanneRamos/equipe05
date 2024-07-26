@@ -8,7 +8,7 @@ import Divider from "@/assets/Divider.svg"
 
 function titulo() {
   return (
-    <h1 className="text-[#FFFF] md:w-[527px] xl:text-[48px] xl:leading-[57.6px] mb-6">Quais são os pilares da  nossa comunidade?</h1>
+    <h2 className="text-[#FFFF] md:w-[527px] xl:text-[48px] xl:leading-[57.6px] mb-6">Quais são os pilares da  nossa comunidade?</h2>
   )
 }
 

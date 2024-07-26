@@ -3,7 +3,7 @@ import * as E from "./Elements"
 
 export default function NossaComunidade() {
   return(
-    <section className=" flex xl:flex-row xl:py-[112px] xl:px-[128px]">
+    <C.ContainerNossaComunidade>
       <C.ContainerImage>
           <E.titulo/>
           <E.elementgroupImage/>
@@ -11,6 +11,6 @@ export default function NossaComunidade() {
        <C.ContainerText>
           <E.Colaboração/>
        </C.ContainerText>
-    </section>
+    </C.ContainerNossaComunidade>
   )
 }

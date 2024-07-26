@@ -3,7 +3,7 @@ import * as E from "./Elements"
 
 export default function QuemSomos() {
   return(
-    <section className=" flex xl:flex-row xl:py-[112px] xl:px-[128px]">
+    < C.ContainerQuemSomos>
        <C.ContainerText>
           <E.titulo/>
           <E.descricao/>
@@ -12,6 +12,6 @@ export default function QuemSomos() {
        <C.ContainerImage>
           <E.elementVectorImage/>
        </C.ContainerImage>
-    </section>
+    </C.ContainerQuemSomos>
   )
 }
