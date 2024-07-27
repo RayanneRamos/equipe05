@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} ${manrope.className} ${roboto.className} font-sans bg-backgroundDef text-white`}>
+      <body className={`${manrope.className} bg-backgroundDef text-white`}>
         <TopBar />
         {children}
       </body>
