@@ -84,7 +84,7 @@ function ContainerTextAprenda({ children }: Props) {
 
 function ButtonAprenda({ children }: Props) {
   return (
-    <button className="relative w-[23.6rem] rounded-full bg-white text-backgroundDef px-[2.4rem] py-[1.2rem] flex items-center justify-between self-center">
+    <button className="relative w-[23.6rem] rounded-full bg-white text-backgroundDef px-[2.4rem] py-[1.2rem] flex items-center justify-between self-center xl:self-start">
       {children}
     </button>
   )
