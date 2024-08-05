@@ -20,3 +20,8 @@
     color: white;
     font-family: 'Manrope', sans-serif;
   }
+
+.comunidadeFeedbacks {
+  border-width: 1px;
+  border-image:linear-gradient(to_bottom,rgba(255,255,255,0.4),rgba(255,255,255,0.1))_1;
+}
