@@ -50,6 +50,7 @@ function InputName() {
       className="w-[213px] h-[48px] border border-[#27272A] rounded-[8px] p-[12px_24px] gap-[8px] bg-transparent font-['Roboto'] text-[16px] font-normal leading-[24px] text-[#A3A3A3]"
       type="text"
       placeholder="Insira seu nome"
+      name="name"
     />
   );
 }
@@ -60,6 +61,7 @@ function InputEmail() {
       className="w-[271px] h-[48px] border border-[#27272A] rounded-[8px] p-[12px_24px] gap-[8px] bg-transparent font-['Roboto'] text-[16px] font-normal leading-[24px] text-[#A3A3A3]"
       type="text"
       placeholder="Insira seu email"
+      name="email"
     />
   );
 }
@@ -70,6 +72,7 @@ function InputMessage() {
       className="w-[500px] h-[48px] border border-[#27272A] rounded-[8px] p-[12px_24px] gap-[8px] bg-transparent font-['Roboto'] text-[16px] font-normal leading-[24px] text-[#A3A3A3]"
       type="text"
       placeholder="Mensagem"
+      name="message"
     />
   );
 }

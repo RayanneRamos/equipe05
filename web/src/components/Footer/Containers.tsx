@@ -1,4 +1,6 @@
-import { ReactNode } from "react";
+"use client";
+
+import { FormEvent, ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
@@ -53,7 +55,47 @@ function FormContainer({ children }: Props) {
 }
 
 function Form({ children }: Props) {
-  return <form className="flex flex-col gap-8">{children}</form>;
+  async function sendMessage(event: FormEvent<HTMLFormElement>) {
+    event?.preventDefault();
+
+    const data = new FormData(event.currentTarget);
+    const name = data.get("name")?.toString();
+    const email = data.get("email")?.toString();
+    const message = data.get("message")?.toString();
+
+    if (!name || !email || !message) {
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/contacts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro na requisição.");
+      }
+
+      const result = await response.json();
+      console.log("Contato enviado com sucesso", result);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  return (
+    <form className="flex flex-col gap-8" onSubmit={sendMessage}>
+      {children}
+    </form>
+  );
 }
 
 function InputsContainer({ children }: Props) {
