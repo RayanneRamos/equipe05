@@ -1,122 +1,58 @@
 import { LogoCoders } from "@/assets/TopBar/svg";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon, CheckIcon } from "@heroicons/react/24/outline";
+import Image from "next/image"
+import formImage from "@/assets/errorForm.svg"
 
-export function ModalForm() {
+export default function ModalError() {
     return (
-        <div className="xl:w-[882px] xl:h-[860px] flex flex-col items-center mx-auto xl:py-[4.1rem] xl:px-[4.6rem] rounded-3xl">
-            <div className="w-full xl:h-[3.6rem] flex justify-end">
-                <XMarkIcon className="h-[1.6rem] w-[1.6rem] my-auto xl:mr-[1.379rem]" />
+        <div className="flex items-center justify-center min-h-screen px-10 py-10">
+            <div className="xl:w-[68.2rem] xl:h-[86rem] flex flex-col items-center justify-between mx-auto xl:py-[4.1rem] xl:px-[4.8rem] rounded-3xl bg-[#111114]">
+                <div className="w-full flex flex-col items-center gap-[3.2rem] text-white pb-[3.9rem]">
+                    <div className="w-full h-[3.6rem] flex justify-end">
+                        <button
+                            className="rounded-full bg-[#171717] flex justify-center items-center px-[1.0rem]"
+                        >
+                            <XMarkIcon className="h-[1.6rem] w-[1.6rem]" />
+                        </button>
+                    </div>
+                    <div className="w-[46rem] flex flex-col gap-[6.4rem] justify-center items-center">
+                        <div className="flex flex-col items-center">
+                            <LogoCoders className="xl:w-[4.8rem] xl:h-[3.2rem] my-[2.5rem]" />
+                            <h2 className="w-full text-center h-auto text-[2.4rem] leading-[3.6rem] tracking-tighter font-manrope font-bold bg-gradient-to-r from-[#A6A6A6] via-[#FFFFFF] to-[#A3A3A3] text-transparent bg-clip-text break-words">Falha no envio</h2>
+                        </div>
+                        <div className="w-full flex flex-col items-center gap-[6.4rem]">
+                            <Image
+                                src={formImage}
+                                alt="Fotos colaboradores"
+                                priority
+                                className="w-[23.5rem] h-[22.437]"
+                            />
+                            <div className="flex flex-col gap-[1.6rem]">
+                                <div className="w-full flex gap-[1.2rem] items-center justify-center">
+                                    <div className="border-[0.2rem] px-[0.5rem] border-[#E53939] rounded-full">
+                                        <p className="text-[#E53939]">!</p>
+                                    </div>
+                                    <p className="text-[2.4rem] font-bold">Algo deu errado</p>
+                                </div>
+                                <p className="text-[1.5rem] text-center font-medium">Lamentamos, houve um problema com sua submissão. Por favor, tente novamente mais tarde.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form className="w-full">
+                    <div className="flex w-full justify-end font-bold gap-[0.8rem] text-[1.4rem]">
+                        <button
+                            className="flex px-[3.2rem] py-[0.4rem] rounded-[0.8rem] text-[#A3A3A3] border border-[#A3A3A3]"
+                            type="submit"
+                        >
+                            <p className="flex items-center justify-center h-[3.2rem]">Fechar</p>
+                        </button>
+                        <button className="flex px-[3.2rem] py-[0.4rem] rounded-[0.8rem] text-[#000000] bg-[#FFFFFF]" type="submit">
+                            <p className="flex items-center justify-center h-[3.2rem]">Tentar novamente</p>
+                        </button>
+                    </div>
+                </form>
             </div>
-            <LogoCoders className="xl:w-[4.8rem] xl:h-[3.2rem] my-[2.5rem]" />
-            <h2 className="xl:w-[28.7rem] xl:h-[3.6rem] xl:text-[2.4rem] xl:leading-[3.6rem] font-roboto font-bold">Ingressar na comunidade</h2>
-            <form>
-                <fieldset className="xl:mt-[3.2rem]">
-                    <legend className="xl:text-[1.6rem] xl:leading-[2.4rem] mx-auto mb-[2.4rem]">
-                        Preencha o formulário com suas informações
-                    </legend>
-                </fieldset>
-
-                <div className="grid grid-cols-1 gap-x-[3.2rem] xl:grid-cols-2 mx-auto text-[1.6rem] leading-[2.4rem]">
-                    <div className="flex flex-col xl:w-[28.0rem] h-[8.4rem]">
-                        <label htmlFor="nome" className="mb-[1.2rem]">Nome*</label>
-                        <input
-                            type="text"
-                            id="nome"
-                            className="xl:w-[28.0rem] xl:h-[4.8rem] xl:rounded-[0.8rem] xl:p-[1.2rem] gap-[1.0rem] border-[0.1rem] border-[#525252] outline-none bg-transparent"
-                            placeholder="Digite seu nome"
-                        />
-                    </div>
-                    <div className="flex flex-col xl:w-[28.0rem] h-[8.4rem]">
-                        <label htmlFor="sobrenome" className="mb-[1.2rem]">Sobrenome*</label>
-                        <input
-                            type="text"
-                            id="sobrenome"
-                            className="xl:w-[28.0rem] xl:h-[4.8rem] xl:rounded-[0.8rem] xl:p-[1.2rem] gap-[1.0rem] border-[0.1rem] border-[#525252] outline-none bg-transparent"
-                            placeholder="Digite seu sobrenome"
-                        />
-                    </div>
-                    <div className="flex flex-col xl:w-[28.0rem] h-[8.4rem]">
-                        <label htmlFor="whatsapp" className="mb-[1.2rem]">Whatsapp*</label>
-                        <input
-                            type="tel"
-                            id="whatsapp"
-                            className="xl:w-[28.0rem] xl:h-[4.8rem] xl:rounded-[0.8rem] xl:p-[1.2rem] gap-[1.0rem] border-[0.1rem] border-[#525252] outline-none bg-transparent"
-                            placeholder="Digite seu Whatsapp"
-                        />
-                    </div>
-                    <div className="flex flex-col xl:w-[28.0rem] h-[8.4rem]">
-                        <label htmlFor="email" className="mb-[1.2rem]">Email*</label>
-                        <input
-                            type="email"
-                            id="email"
-                            className="xl:w-[28.0rem] xl:h-[4.8rem] xl:rounded-[0.8rem] xl:p-[1.2rem] gap-[1.0rem] border-[0.1rem] border-[#525252] outline-none bg-transparent"
-                            placeholder="Digite seu email"
-                        />
-                    </div>
-                    <div className="flex flex-col xl:w-[28.0rem] h-[8.4rem]">
-                        <label htmlFor="area-de-interesse" className="mb-[1.2rem]">Área de interesse*</label>
-                        <select
-                            id="area-de-interesse"
-                            className="xl:w-[28.0rem] xl:h-[4.8rem] xl:rounded-[0.8rem] xl:p-[1.2rem] gap-[1.0rem] border-[0.1rem] border-[#525252] outline-none bg-transparent text-white"
-                        >
-                            <option value="" disabled selected className="bg-[#111114] text-white">Selecione uma opção</option>
-                            <option value="Frontend" className="bg-[#111114] text-white">Frontend</option>
-                            <option value="Backend" className="bg-[#111114] text-white">Backend</option>
-                            <option value="QA" className="bg-[#111114] text-white">QA</option>
-                            <option value="Banco-de-dados" className="bg-[#111114] text-white">Banco de dados</option>
-                            <option value="Ux-UI" className="bg-[#111114] text-white">Ux/UI</option>
-                        </select>
-                    </div>
-                    <div className="flex flex-col xl:w-[28.0rem] h-[8.4rem]">
-                        <label htmlFor="linguagem" className="mb-[1.2rem]">Linguagem</label>
-                        <select
-                            id="linguagem"
-                            className="xl:w-[28.0rem] xl:h-[4.8rem] xl:rounded-[0.8rem] xl:p-[1.2rem] gap-[1.0rem] border-[0.1rem] border-[#525252] outline-none bg-transparent text-white"
-                        >
-                            <option value="" disabled selected className="bg-[#111114] text-white">Selecione uma opção</option>
-                            <option value="JavaScript" className="bg-[#111114] text-white">JavaScript</option>
-                            <option value="Java" className="bg-[#111114] text-white">Java</option>
-                            <option value="Python" className="bg-[#111114] text-white">Python</option>
-                            <option value="CSharp" className="bg-[#111114] text-white">CSharp</option>
-                        </select>
-                    </div>
-                    <div className="flex flex-col xl:w-[28.0rem] h-[8.4rem]">
-                        <label htmlFor="data" className="mb-[1.2rem]">Disponibilidade*</label>
-                        <input
-                            type="date"
-                            id="data"
-                            className="xl:w-[28.0rem] xl:h-[4.8rem] xl:rounded-[0.8rem] xl:p-[1.2rem] gap-[1.0rem] border-[0.1rem] border-[#525252] outline-none bg-transparent text-white"
-                            placeholder="Selecione uma data"
-                        />
-                    </div>
-                    <div className="flex flex-col xl:w-[28.0rem] h-[8.4rem]">
-                        <label htmlFor="turno" className="mb-[1.2rem]">Turno</label>
-                        <select
-                            id="turno"
-                            className="xl:w-[28.0rem] xl:h-[4.8rem] xl:rounded-[0.8rem] xl:p-[1.2rem] gap-[1.0rem] border-[0.1rem] border-[#525252] outline-none bg-transparent text-white"
-                        >
-                            <option value="" disabled selected className="bg-[#111114] text-white">Selecione uma opção</option>
-                            <option value="Manhã" className="bg-[#111114] text-white">Manhã</option>
-                            <option value="Tarde" className="bg-[#111114] text-white">Tarde</option>
-                            <option value="Noite" className="bg-[#111114] text-white">Noite</option>
-                        </select>
-                    </div>
-
-                </div>
-                <div className="flex items-center">
-                    <input
-                        type="checkbox"
-                        id="aceitar-termos"
-                        className="mr-2"
-                    />
-                    <label htmlFor="aceitar-termos" className="xl:w-[55.8rem] xl:h-[4.2rem] text-[1.4rem] leading-[2.1rem] font-manrope">
-                        Declaro que li e concordo com os Termos e Condições e com a Política de Privacidade da Código certo coders.
-                    </label>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-
-
         </div>
     );
 }
