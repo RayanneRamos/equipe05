@@ -12,22 +12,22 @@ const config: Config = {
       fontFamily: {
         inter: ['var(--font-inter)'],
         roboto: ['var(--font-roboto)'],
-        manrope: ['var(--font-manrope)']
+        manrope: ['var(--font-manrope)'],
       },
       transitionDuration: {
-        'hoverDelay': '300ms',
+        hoverDelay: '300ms',
       },
       transitionProperty: {
-        'colors': 'background-color, border-color, color',
+        colors: 'background-color, border-color, color',
       },
       transitionTimingFunction: {
-        'ease': 'ease',
+        ease: 'ease',
       },
       colors: {
-        'white': '#FFFFFF',
-        'black': '#000000',
-        'secondary': '#111114',
-        'backgroundDef': '#09090B',
+        white: '#FFFFFF',
+        black: '#000000',
+        secondary: '#111114',
+        backgroundDef: '#09090B',
         'primitive-400': '#F27777',
         'primitive-500': '#E53939',
         'neutral-100': '#F5F5F5',
@@ -42,6 +42,7 @@ const config: Config = {
         'neutral-900': '#171717',
         'gray-200': '#E5E7EB',
         'gray-300': '#D1D5DB',
+        'gray-400': '#9CA3AF',
         'zinc-300': '#D4D4D8',
         'zinc-400': '#A1A1AA',
         'zinc-700': '#3F3F46',
@@ -50,106 +51,41 @@ const config: Config = {
       },
       opacity: {
         '06': '0.06',
-      }
+      },
+      lineHeight: {
+        'custom-57': '5.76rem',
+        '24px': '24px',
+      },
+      spacing: {
+        '768px': '768px',
+        '106px': '106px',
+        '58px': '58px',
+        '80px': '80px',
+        '24px': '24px',
+      },
+      maxWidth: {
+        '1512px': '1512px',
+      },
+      borderWidth: {
+        '1': '1px', // Adiciona uma borda de 1px
+      },
+      borderImageSource: {
+        'gradient-custom': 'linear-gradient(101.16deg, rgba(255, 255, 255, 0.4) 1.96%, rgba(255, 255, 255, 0.1) 110.25%)',
+      },
+      borderImageSlice: {
+        custom: '1',
+      },
     },
   },
   plugins: [
     plugin(function ({ addUtilities }) {
-    const hoverDelay = '0.3s'; // Define your hover delay here
       addUtilities({
         '.bg': {
           backgroundColor: '#191D1F',
-          // display: 'flex',
-          // flexDirection: 'column',
-        },
-        '.btn-submit': {
-          width: '105px',
-          height: '40px',
-          borderWidth: '1px',
-          borderRadius: '8px',
-          backgroundColor: '#FFFFFF',
-          borderColor: '#FFFFFF',
-          color: '#000000',
-          fontSize: '14px',
-          fontWeight: '700',
-          transition: `background-color ${hoverDelay} ease, border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            backgroundColor: '#F27777',
-            borderColor: '#F27777',
-            color: '#FFFFFF',
-          },
-        },
-        '.btn-close': {
-          width: '105px',
-          height: '40px',
-          borderWidth: '1px',
-          borderRadius: '8px',
-          backgroundColor: 'transparent',
-          borderColor: '#A3A3A3',
-          color: '#A3A3A3',
-          fontSize: '14px',
-          fontWeight: '700',
-          transition: `border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            borderColor: '#D4D4D4',
-            color: '#D4D4D4',
-          },
-        },
-        '.btn-cancel': {
-          width: '160px',
-          height: '40px',
-          borderWidth: '1px',
-          borderRadius: '8px',
-          backgroundColor: 'transparent',
-          borderColor: '#F27777',
-          color: '#F27777',
-          fontSize: '14px',
-          fontWeight: '700',
-          transition: `border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            backgroundColor: 'transparent',
-            borderColor: '#E53939',
-            color: '#E53939',
-          },
-        },
-        '.btn-tryAgain': {
-          width: '181px',
-          height: '40px',
-          borderWidth: '1px',
-          borderRadius: '8px',
-          backgroundColor: '#FFFFFF',
-          borderColor: '#FFFFFF',
-          color: '#000000',
-          fontSize: '14px',
-          fontWeight: '700',
-          transition: `background-color ${hoverDelay} ease, border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            backgroundColor: '#F27777',
-            borderColor: '#F27777',
-            color: '#D4D4D4',
-          },
-        },
-        '.btn-topBar': {
-          width: '132px',
-          height: '48px',
-          borderWidth: '1px',
-          borderRadius: '50px',
-          backgroundColor: 'transparent',
-          borderColor: '#E53939',
-          color: '#FFFFFF',
-          fontSize: '18px',
-          fontWeight: '600',
-          transition: `background-color ${hoverDelay} ease, border-color ${hoverDelay} ease, color ${hoverDelay} ease`,
-          '&:hover': {
-            backgroundColor: '#E53939',
-            borderColor: '#E53939',
-            color: '#D4D4D4',
-          },
         },
         '.heroSection': {
           display: 'flex',
           flexDirection: 'column-reverse',
-          // height: '584px',
           padding: '64px 16px',
           alignItems: 'center',
           alignSelf: 'stretch',
@@ -158,27 +94,22 @@ const config: Config = {
         '.containerText': {
           display: 'flex',
           maxWidth: '1024px',
-          // maxWidth: '646px',
           padding: '32px',
           flexDirection: 'column',
           justifyContent: 'space-between',
           alignItems: 'flex-start',
-          // alignSelf: 'stretch',
         },
         '.title-heroSection': {
-          // flex: '1 0 0',
           width: '334px',
           maxWidth: '646px',
           fontFamily: 'var(--font-manrope)',
           fontSize: '40px',
           fontStyle: 'normal',
           fontWeight: '700',
-          lineHeight: '48px', /* 112.5% */
+          lineHeight: '48px',
           letterSpacing: '-2.56px',
-          // color: '#FFF',
         },
         '.description-heroSection': {
-          // flex:' 1 0 0',
           width: '334px',
           fontFamily: 'var(--font-manrope)',
           fontSize: '16px',
@@ -189,10 +120,10 @@ const config: Config = {
           color: '#E5E5E5',
         },
         '.description-heroSection .potencial': {
-          color: '##FFF',
+          color: '#FFF',
         },
         '.description-heroSection .ilimitado': {
-          color: '##FFF',
+          color: '#FFF',
           fontWeight: '700',
         },
         '.description-heroSection .constante': {
@@ -210,14 +141,14 @@ const config: Config = {
           padding: '8px 32px',
           alignItems: 'center',
           borderRadius: '50px',
-          border: ' 1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
-          background: ' var(--Primitive-500, #E53939)',
+          border: '1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
+          background: 'var(--Primitive-500, #E53939)',
           fontFamily: 'var(--font-manrope)',
           fontSize: '16px',
           fontStyle: 'normal',
           fontWeight: '400',
           lineHeight: '24px',
-          letterSpacing: '-0.54px;',
+          letterSpacing: '-0.54px',
           color: '#FFF',
         },
         '.btn-saibaMais': {
@@ -225,13 +156,13 @@ const config: Config = {
           padding: '8px 32px',
           alignItems: 'center',
           borderRadius: '50px',
-          border: ' 1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
+          border: '1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
           fontFamily: 'var(--font-manrope)',
           fontSize: '18px',
           fontStyle: 'normal',
           fontWeight: '400',
           lineHeight: '24px',
-          letterSpacing: '-0.54px;',
+          letterSpacing: '-0.54px',
           color: '#FFF',
         },
         '.comunidade': {
@@ -243,18 +174,22 @@ const config: Config = {
           fontWeight: '400',
           lineHeight: '24px',
           gap: '8px',
-
         },
         '.img-mapaMundi': {
           width: '398px',
-          // height: '326px',
           flex: '1 0 0',
         },
         '.beneficios': {
-          fontFamily: 'var(--font-roboto)'
+          fontFamily: 'var(--font-roboto)',
         },
-
-    });
+        '.gradient-text': {
+          background: 'linear-gradient(90deg, #A6A6A6 0%, #FFFFFF 50.15%, #A3A3A3 100%)',
+          '-webkit-background-clip': 'text',
+          '-webkit-text-fill-color': 'transparent',
+          'background-clip': 'text',
+          'text-fill-color': 'transparent',
+        },
+      });
     }),
   ],
 };
