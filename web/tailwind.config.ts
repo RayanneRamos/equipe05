@@ -37,6 +37,7 @@ const config: Config = {
         'neutral-500': '#737373',
         'neutral-600': '#525252',
         'neutral-700': '#404040',
+        'neutral-750': '#494949',
         'neutral-800': '#262626',
         'neutral-900': '#171717',
         'gray-200': '#E5E7EB',
@@ -198,19 +199,19 @@ const config: Config = {
           fontWeight: '700',
         },
         '.containerButtons': {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'flex-start',
-            gap : '16px',
-            padding: '16px 0',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'flex-start',
+          gap: '16px',
+          padding: '16px 0',
         },
         '.btn-participe': {
           display: 'flex',
           padding: '8px 32px',
           alignItems: 'center',
           borderRadius: '50px',
-          border:' 1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
-          background:' var(--Primitive-500, #E53939)',
+          border: ' 1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
+          background: ' var(--Primitive-500, #E53939)',
           fontFamily: 'var(--font-manrope)',
           fontSize: '16px',
           fontStyle: 'normal',
@@ -224,7 +225,7 @@ const config: Config = {
           padding: '8px 32px',
           alignItems: 'center',
           borderRadius: '50px',
-          border:' 1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
+          border: ' 1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
           fontFamily: 'var(--font-manrope)',
           fontSize: '18px',
           fontStyle: 'normal',
@@ -245,14 +246,15 @@ const config: Config = {
 
         },
         '.img-mapaMundi': {
-            width: '398px',
-            // height: '326px',
-            flex: '1 0 0',
+          width: '398px',
+          // height: '326px',
+          flex: '1 0 0',
         },
         '.beneficios': {
           fontFamily: 'var(--font-roboto)'
         },
-      });
+
+    });
     }),
   ],
 };
