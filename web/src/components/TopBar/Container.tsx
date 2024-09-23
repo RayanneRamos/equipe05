@@ -6,7 +6,7 @@ type Props = {
 
 function TopBarContainer({ children }: Props) {
     return (
-        <header className="fixed right-[1.6rem] left-[1.6rem] xl:w-screen xl:left-0 xl:right-0 xl:h-[9.6rem] xl:px-[6.4rem]">
+        <header className="fixed right-[1.6rem] left-[1.6rem] xl:w-full xl:left-0 xl:right-0 xl:h-[9.6rem] xl:px-[6.4rem] bg-backgroundDef z-30 border-b-1 border-[#27272A]">
             {children}
         </header>
     )

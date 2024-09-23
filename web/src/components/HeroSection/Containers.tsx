@@ -6,14 +6,14 @@ type Props = {
 
 function ContainerHeroSection({ children }: Props) {
   return(
-    <section className="heroSection xl:flex-row xl:py-[24px] xl:px-[72px]">
+    <div className="heroSection lg:flex-row lg:px-[2.4rem] lg:py-[7.2rem]">
       {children}
-    </section>
+    </div>
   )
 }
 function ContainerText({ children }: Props) {
   return(
-    <div className="containerText xl:py-0 xl:px-16">
+    <div className="containerText lg:py-0 lg:px-[6.4rem]">
       {children}
     </div>
   )

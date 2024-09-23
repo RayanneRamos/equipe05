@@ -72,3 +72,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(93%)
     contrast(82%);
 }
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Para Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari e outros navegadores baseados em WebKit */
+}

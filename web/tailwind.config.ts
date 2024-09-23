@@ -94,6 +94,7 @@ const config: Config = {
         '.containerText': {
           display: 'flex',
           maxWidth: '1024px',
+          maxHeight: '440px',
           padding: '32px',
           flexDirection: 'column',
           justifyContent: 'space-between',
@@ -110,7 +111,6 @@ const config: Config = {
           letterSpacing: '-2.56px',
         },
         '.description-heroSection': {
-          width: '334px',
           fontFamily: 'var(--font-manrope)',
           fontSize: '16px',
           fontStyle: 'normal',
@@ -144,7 +144,6 @@ const config: Config = {
           border: '1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
           background: 'var(--Primitive-500, #E53939)',
           fontFamily: 'var(--font-manrope)',
-          fontSize: '16px',
           fontStyle: 'normal',
           fontWeight: '400',
           lineHeight: '24px',
@@ -158,12 +157,10 @@ const config: Config = {
           borderRadius: '50px',
           border: '1px solid var(--Grad-stroke, rgba(255, 255, 255, 0.40))',
           fontFamily: 'var(--font-manrope)',
-          fontSize: '18px',
           fontStyle: 'normal',
           fontWeight: '400',
           lineHeight: '24px',
           letterSpacing: '-0.54px',
-          color: '#FFF',
         },
         '.comunidade': {
           alignItems: 'center',

@@ -24,18 +24,19 @@ function Sobre() {
     )
 }
 
-function Oportunidades() {
-    return (
-        <Link href='#Oportunidades'>
-            <TextLink text='Oportunidades' />
-        </Link>
-    )
-}
 
 function Beneficios() {
     return (
         <Link href='#Beneficios'>
             <TextLink text='Benefícios' />
+        </Link>
+    )
+}
+
+function Oportunidades() {
+    return (
+        <Link href='#Oportunidades'>
+            <TextLink text='Oportunidades' />
         </Link>
     )
 }

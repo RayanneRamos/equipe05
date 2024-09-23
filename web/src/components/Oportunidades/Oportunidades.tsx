@@ -5,6 +5,7 @@ import * as E from "./Elements"
 export default function Oportunidades() {
   return (
     <C.ContainerSection>
+      <C.Container>
       <E.BgImage />
       <C.ContainerTitle>
         <E.TitleContainer />
@@ -43,6 +44,7 @@ export default function Oportunidades() {
           <E.ProjetoImage />
         </C.ContainerAprenda>
       </C.ContainerContent>
+    </C.Container>
     </C.ContainerSection>
   )
 }

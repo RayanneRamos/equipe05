@@ -89,8 +89,8 @@ function Description() {
 function Button() {
     return (
         <div className="inline-block bg-gradient-to-tl from-white/10 to-white/40 bg-[#E53939] p-[1px] rounded-[3.6rem]">
-            <button className="bg-[#E53939] w-full h-full px-[2.5rem] py-[1.5rem] rounded-[3.6rem]">
-                <p className="text-[1.6rem] leading-[1.6rem] text-[#FFFFFF]">Junte-se ao Discord</p>
+            <button className="bg-[#E53939] text-[#FFFFFF] hover:bg-white hover:text-black transition-colors duration-300 w-full h-full px-[2.5rem] py-[1.5rem] rounded-[3.6rem]">
+                <p className="text-[1.6rem] leading-[1.6rem]">Junte-se ao Discord</p>
             </button>
         </div>
 

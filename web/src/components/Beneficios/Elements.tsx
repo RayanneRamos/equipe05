@@ -5,7 +5,7 @@ import Business from "@/assets/briefcase-business.svg";
 
 function titulo() {
   return (
-    <h2 className="font-bold leading-9 md-leading-[57.6px] bg-clip-text text-transparent bg-gradient-to-r from-[#A6A6A6] via-[#FFF] to-[#A3A3A3] text-[32px] lg:text-5xl">
+    <h2 className="font-bold leading-[120%] md-leading-[120%] bg-clip-text text-transparent bg-gradient-to-r from-[#A6A6A6] via-[#FFF] to-[#A3A3A3] text-[3.2rem] lg:text-[4.8rem]">
       Por que se juntar a comunidade da Código Certo?
     </h2>
   );
@@ -13,7 +13,7 @@ function titulo() {
 
 function descricao() {
   return (
-    <p className="text-white text-base md:text-lg xl:leading-normal leading-[27px]">
+    <p className="text-white text-base md:text-[1.8rem] xl:leading-[150%] leading-[2.7rem]">
       Nossa comunidade é um espaço colaborativo onde você pode aprender com os
       outros, compartilhar suas experiências e encontrar oportunidades de
       crescimento. Junte-se a nós e descubra como podemos ajudá-lo a alcançar
@@ -75,7 +75,7 @@ function networking() {
         className="w-[48px] xl:w-[48px]"
       />
       <h3 className="font-bold text-[20px] md:text-[40px]">Oportunidades de Networking</h3>
-      <p className="text-base md:text-xl	leading-[30px]">
+      <p id='Oportunidades' className="text-base md:text-xl	leading-[30px]">
         Conecte-se com outros desenvolvedores de software e expanda sua rede de
         contatos.
       </p>

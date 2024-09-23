@@ -75,6 +75,12 @@ function TextButtonVoluntariar() {
     <p className="font-bold text-[1.6rem]">Quero me voluntariar</p>
   )
 }
+
+function TextButtonCursos() {
+  return (
+    <p className="font-bold text-[1.6rem]">Conhecer Cursos</p>
+  )
+}
 function ButtonIcon() {
   return (
     <ArrowTopRightOnSquareIcon className="h-[1.6rem] w-[1.6rem]" />
@@ -138,6 +144,7 @@ export {
   TitleLeftText,
   DescriptionLeftText,
   TextButtonVoluntariar,
+  TextButtonCursos,
   ButtonIcon,
   TitleRightText,
   TitleRightBottomText,

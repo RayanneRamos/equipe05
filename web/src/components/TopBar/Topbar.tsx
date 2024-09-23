@@ -12,9 +12,11 @@ export function TopBar() {
                             <E.Sobre />
                         </C.LiContainer>
                         <C.LiContainer>
+                        <E.Beneficios />
+                        </C.LiContainer>
+                        <C.LiContainer>
                             <E.Oportunidades />
                         </C.LiContainer>
-                        <E.Beneficios />
                         <C.LiContainer>
                             <E.Comunidade />
                         </C.LiContainer>

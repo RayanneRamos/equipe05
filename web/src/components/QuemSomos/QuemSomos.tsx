@@ -3,7 +3,8 @@ import * as E from "./Elements"
 
 export default function QuemSomos() {
   return(
-    < C.ContainerQuemSomos>
+  <C.Container>
+    <C.ContainerQuemSomos>
        <C.ContainerText>
           <E.titulo/>
           <E.descricao/>
@@ -13,5 +14,16 @@ export default function QuemSomos() {
           <E.elementVectorImage/>
        </C.ContainerImage>
     </C.ContainerQuemSomos>
+    <C.ContainerPilares>
+      <C.ContainerImage>
+          <E.tituloPilares/>
+          <E.elementgroupImage/>
+       </C.ContainerImage>
+       <C.TextContainer>
+          <E.Colaboração/>
+       </C.TextContainer>
+    </C.ContainerPilares>
+  </C.Container>
+    
   )
 }

@@ -31,3 +31,69 @@ export const LogoCoders: React.FC<LogoCodersProps> = ({ className }) => (
         </defs>
     </svg>
 );
+
+export function UxDesignIcon() {
+    return (
+      <svg
+        width={19}
+        height={13}
+        viewBox="0 0 19 13"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16.694 7.597a7.43 7.43 0 00-3.08-4.335h4.535a.615.615 0 100-1.23h-6.226a2.46 2.46 0 00-4.765 0H.933a.615.615 0 000 1.23h4.534a7.43 7.43 0 00-3.08 4.335 2.46 2.46 0 101.242.123 6.195 6.195 0 013.683-4.04 2.46 2.46 0 004.462 0 6.195 6.195 0 013.679 4.04 2.46 2.46 0 101.24-.121v-.002zM4.007 10.025a1.23 1.23 0 11-2.46 0 1.23 1.23 0 012.46 0zM9.54 3.877a1.23 1.23 0 110-2.46 1.23 1.23 0 010 2.46zm6.763 7.378a1.23 1.23 0 110-2.46 1.23 1.23 0 010 2.46z"
+          fill="#E8E9EA"
+        />
+      </svg>
+    )
+  }
+
+  export function RayImage() {
+    return (
+      <svg
+        width={83}
+        height={156}
+        viewBox="0 0 83 156"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M79.777 78.084H58.134a1.74 1.74 0 01-1.734-1.901l6.106-66.163c.823-8.913-10.818-13-15.748-5.53L1.398 73.215c-1.377 2.087.12 4.869 2.621 4.869h21.644a1.74 1.74 0 011.733 1.901l-6.106 66.163c-.822 8.913 10.819 13.001 15.75 5.53l45.358-68.725c1.377-2.087-.12-4.869-2.62-4.869z"
+          fill="url(#paint0_linear_140_6099)"
+        />
+        <path
+          d="M79.778 78.084H58.134a1.74 1.74 0 01-1.733-1.901l6.106-66.163c.297-3.21-1.03-5.79-3.072-7.434l-22.533 42.82a27.17 27.17 0 004.831 31.866 27.169 27.169 0 015.346 30.836l-21.826 46.108c3.643 2.251 8.88 1.866 11.787-2.538l45.358-68.725c1.378-2.087-.119-4.869-2.62-4.869z"
+          fill="url(#paint1_linear_140_6099)"
+        />
+        <defs>
+          <linearGradient
+            id="paint0_linear_140_6099"
+            x1={15.2979}
+            y1={59.7267}
+            x2={56.6702}
+            y2={88.2787}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#FEF0AE" />
+            <stop offset={1} stopColor="#FBC56D" />
+          </linearGradient>
+          <linearGradient
+            id="paint1_linear_140_6099"
+            x1={55.1363}
+            y1={80.2395}
+            x2={23.0874}
+            y2={76.7427}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#DC8758" stopOpacity={0} />
+            <stop offset={0.215} stopColor="#DD8654" stopOpacity={0.215} />
+            <stop offset={0.429} stopColor="#E28448" stopOpacity={0.429} />
+            <stop offset={0.642} stopColor="#EA8034" stopOpacity={0.642} />
+            <stop offset={0.854} stopColor="#F47B18" stopOpacity={0.854} />
+            <stop offset={1} stopColor="#FE7701" />
+          </linearGradient>
+        </defs>
+      </svg>
+    )
+  }

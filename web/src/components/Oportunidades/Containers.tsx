@@ -6,9 +6,17 @@ type Props = {
 
 function ContainerSection({ children }: Props) {
   return (
-    <section className="relative w-full px-[1.6rem] xl:px-[22.0rem]">
+    <section className="flex justify-center ">
       {children}
     </section>
+  )
+}
+
+function Container({ children }: Props) {
+  return (
+    <div className="relative max-w-[151.2rem] px-[1.6rem] xl:px-[22.0rem]">
+      {children}
+    </div>
   )
 }
 function ContainerTitle({ children }: Props) {
@@ -44,7 +52,7 @@ function ContainerTextOportunidades({ children }: Props) {
 
 function ButtonVoluntariar({ children }: Props) {
   return (
-    <button className="max-w-[23.6rem] rounded-full bg-white text-backgroundDef px-[2.4rem] py-[1.2rem] flex items-center justify-between">
+    <button className="w-[23.6rem] rounded-full bg-white text-backgroundDef hover:bg-[#F27777] hover:text-[#FFFFFF] transition-colors duration-300 px-[2.4rem] py-[1.2rem] flex items-center justify-between">
       {children}
     </button>
   )
@@ -84,13 +92,14 @@ function ContainerTextAprenda({ children }: Props) {
 
 function ButtonAprenda({ children }: Props) {
   return (
-    <button className="relative w-[23.6rem] rounded-full bg-white text-backgroundDef px-[2.4rem] py-[1.2rem] flex items-center justify-between self-center xl:self-start">
+    <button className="relative w-[23.6rem] rounded-full bg-[#E53939] text-white hover:bg-white hover:text-[#09090B] transition-colors duration-300 px-[2.4rem] py-[1.2rem] flex items-center justify-between self-center xl:self-start">
       {children}
     </button>
   )
 }
 
 export {
+  Container,
   ContainerSection,
   ContainerTitle,
   ContainerContent,

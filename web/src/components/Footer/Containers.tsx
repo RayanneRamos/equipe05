@@ -6,7 +6,7 @@ type Props = {
 
 function Container({ children }: Props) {
   return (
-    <div className="w-full text-white p-20 flex flex-col items-center">
+    <div id="Contato" className="w-full text-white p-20 flex flex-col items-center border-t-1 border-[#27272A]">
       {children}
     </div>
   );
